@@ -14,20 +14,23 @@ public class APP {
 		box.add(new Aluno("Pato3", "123"));
 		box.add(new Aluno("Pato4", "1234"));
 		box.add(new Aluno("Pato5", "12345"));
+		box.add(new Aluno("Pato6", "123456"));
+
 		
 		System.out.println(box.size());
 		
 		box.print();
 		
-		box.removeInde(0);
+		box.remove(0);
 		
-		box.removeElem(x);
+		box.remove(x);
 		
-		box.removeElem(new Aluno("Pato8", "12345678"));
+		box.remove(new Aluno("Pato6", "123456"));
+		
+		System.out.println(box.size());
 		
 		box.print();
 		
-		System.out.println(box.size());
 		
 
 	}

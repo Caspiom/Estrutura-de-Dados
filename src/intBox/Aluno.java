@@ -31,6 +31,12 @@ public class Aluno {
 		return matricula;
 	}
 	
+	public boolean equals(Object o) {
+		Aluno a=(Aluno)o;
+		return this.nome.equals(a.nome);
+		}
+		
+	
 	public String toString() {
 		return "Nome: " +nome+ "| Matricula: " +matricula;
 	}

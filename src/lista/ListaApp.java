@@ -13,21 +13,28 @@ public class ListaApp {
 	
 //	minhaLista.add(new Aluno("Everton", "123"));
 //	minhaLista.removePosicao(0);
-	Aluno a = new Aluno("Zulu", "321");
+	Aluno a = new Aluno("Lucas", "321");
 	minhaLista.add(a);
-	Aluno b = new Aluno("Zulu2", "4321");
+	Aluno b = new Aluno("Pedro", "4321");
 	minhaLista.add(b);
-	Aluno c = new Aluno("Zulu3", "54321");
+	Aluno c = new Aluno("Yuri", "54321");
 	minhaLista.add(c);
-	minhaLista.add(new Aluno("Zulu4", "100"));
+	minhaLista.add(new Aluno("Caio", "100"));
+	Aluno d = new Aluno("Augusto", "654321");
+	minhaLista.add(d);
+	Aluno e = new Aluno("Renata", "7654321");
+	minhaLista.add(e);
 	
 	
 	System.out.println(minhaLista.size());
 	minhaLista.print();
 	
 	minhaLista.removePosicao(0);
+	
+	minhaLista.removeConteudo(c);
 
-	minhaLista.removeConteudo("Zulu4", "100");
+	minhaLista.removeConteudo("Caio", "100");
+	
 	minhaLista.add(1, c);
 	
 	System.out.println(minhaLista.size()); 

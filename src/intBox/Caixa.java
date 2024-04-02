@@ -89,7 +89,7 @@ public class Caixa {
 		}
 	}
 	
-	public void removeInde(int index) {
+	public void remove(int index) {
 		if(index<0 || index>size) {
 			throw new IndexOutOfBoundsException("Index =" +index + "Size =" +size);
 		}else {
@@ -100,16 +100,17 @@ public class Caixa {
 		}
 	}
 	
-	public boolean removeElem(Object elem) {
+	public boolean remove(Object elem) {
 		for(int i = 0; i < size; i++) {
-			Object x = elements[i];
-		if(x.equals(elem)) {
-		removeInde(i);
+		if(elements[i].equals(elem)) {
+		remove(i);
 		return true;
 		}
 	}
 	return false;
 	}
+	
+	
 	
 		
 	
